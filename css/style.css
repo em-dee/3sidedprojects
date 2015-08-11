@@ -236,20 +236,20 @@ footer p {
     #menu {
 		display: none;
 	}
-	
+
 	.slicknav_menu {
 		display: block;
 		background: none;
 	}
 	
 	.slicknav_menutxt{
-	    float: right;
-	    text-align: right;
 	    color: #353634;
 	}
 	
 	.slicknav_nav a {
 	    color: #3EA6AC;
+        padding: 5px 2px;
+        margin: 5px 0px;
 	}
     
     .slicknav_nav a:hover {
@@ -266,6 +266,7 @@ footer p {
     .wrapper {
         overflow-y: scroll;
     }
+    
     footer {
         height: 50px;
     }
@@ -280,6 +281,10 @@ footer p {
         width: 90%;
     }
 
+}
 
 @media screen and (max-width:400px) {
+    .slicknav_nav {
+        font-size: 0.8em;
 }
+
