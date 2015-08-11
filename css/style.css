@@ -24,7 +24,12 @@ body {
 	display:none;
 }
 
-#logo-container {
+#mobile-menu {
+    float: right;
+    max-width: 9.375em;
+}
+
+#logo-container, #mobile-menu {
 	width: 18%;
     padding: 0 0.5%;
 	margin: 0 0.5%;
@@ -190,7 +195,7 @@ footer {
     height: 80px;
     bottom: 0px;
     width: 100%;
-    background-color: rgba(219, 219, 219, 0.7);
+    background-color: rgba(219, 219, 219, 1);
 }
 
 footer p {
@@ -232,10 +237,32 @@ footer p {
 		display: none;
 	}
 	
-	.js .slicknav_menu {
+	.slicknav_menu {
 		display: block;
+		background: none;
+	}
+	
+	.slicknav_menutxt{
+	    float: right;
+	    text-align: right;
+	    color: #353634;
+	}
+	
+	.slicknav_nav a {
+	    color: #3EA6AC;
 	}
     
+    .slicknav_nav a:hover {
+      background: rgba(97, 135, 137, 0.3);
+      color: #353634; 
+    }
+    
+    .slicknav_btn {
+      margin-right: 1em;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+      background-color: #62A7B5;
+    }
+      
     .wrapper {
         overflow-y: scroll;
     }

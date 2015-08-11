@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    
+//mobile menu - slicknav
+	$('#menu').slicknav({
+	        label: '',
+		    prependTo: '#mobile-menu'
+	});    
   
 //flex-images on Works
     $('.flex-images').flexImages({
@@ -42,13 +48,4 @@ $(document).ready(function() {
         Validator.language= 'en';
     });       
 
-
-
-//mobile menu - slicknav
-	$(function(){
-		$('#menu').slicknav({
-		    label: 'menu'
-		});
-	});
-	
 });	
