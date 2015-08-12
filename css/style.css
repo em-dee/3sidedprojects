@@ -28,13 +28,17 @@ body {
 
 #mobile-menu {
     float: right;
-    max-width: 9.375em;
 }
+
 
 #logo-container, #mobile-menu {
 	width: 18%;
     padding: 0 0.5%;
 	margin: 0 0.5%;
+}
+
+#mobile-menu {
+	width: 22%;
 }
 
 #logo {
@@ -251,6 +255,25 @@ footer p {
     }
 }
 
+@media screen and (max-width:800px) {
+    .formblock { 
+        margin-left: 15%;
+    }
+    
+    .form {
+        width: 80%;
+    }
+    
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 80%;
+    }
+    
+    h1, h2, h3, p {
+        font-size: 1.2em;
+    }
+}
 
 @media screen and (max-width:620px) {
     #menu {
@@ -268,8 +291,9 @@ footer p {
 	
 	.slicknav_nav a {
 	    color: #3EA6AC;
-        padding: 5px 2px;
-        margin: 5px 0px;
+        padding: .25em .1em;
+        float: right;
+        margin: 0em 1.1em 0.2em 0em;
 	}
     
     .slicknav_nav a:hover {
@@ -304,6 +328,11 @@ footer p {
         height: 50px;
     }
     
+    #contact-form {
+        width: 70%;
+        margin: 1.5em auto;        
+    }
+    
     .formblock { 
         margin-left: 10%;
     }
@@ -314,14 +343,40 @@ footer p {
         width: 90%;
     }
     
-
-
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     .slicknav_nav {
         font-size: 0.8em;
     }
+    
+    #contact-form {
+        width: 80%;
+        margin: 1.75em auto;        
+    }
+    
+    .formblock { 
+        margin-left: 15%;
+    }
+    
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    #logo {
+        max-width: 8em;
+    }
+    
+    .slicknav_nav a {
+        float: right;
+        font-size: 0.8em;
+        margin: 0em 1em 0.2em 0em;
+	}
     
     #index {
         max-height: 1000px;
@@ -340,5 +395,46 @@ footer p {
         margin: 2em auto;
         padding: .5em;
     }
+
+    #contact-form {
+        width: 90%;
+        margin: 2em auto;        
+    }    
+    
+   .formblock { 
+        margin-left: 10%;
+    }
+    
+    .form {
+        width: 90%;
+    }
+    
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 90%;
+    }    
+}
+
+@media screen and (max-width:340px) {
+    
+    #contact-form {
+        width: 92%;
+        margin: 1em auto;        
+    }
+    
+   .formblock { 
+        margin-left: 2%;
+    }
+    
+    .form {
+        width: 95%;
+    }
+    
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 95%;
+    }    
 }
 
