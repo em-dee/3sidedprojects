@@ -17,7 +17,7 @@ img {
 body {
     font-family: "Source Sans Pro", Arial, sans-serif;
     background-color: #FFFFFF;
-    color: #353634;
+    color: #556970;
     margin: 0;
 }
 
@@ -125,13 +125,22 @@ nav #menu li a {
 
 
 /* ---- CONTACT ---- */
+#contact-bkg {
+    margin-top: 3em;
+    width: 100%;
+    min-height: 600px;
+    max-height: 800px;
+    background: url("../images/3sided_logo2.png") no-repeat center center fixed;
+}
+
 #contact-form {
-    width: 60%;
+    width: 50%;
+    float: left;
     margin: 3em auto;
     padding: 1em;
     -webkit-border-radius: .5em;
     border-radius: .5em; 
-    background-color: rgba(97, 135, 137, 0.3);
+   /* background-color: rgba(97, 135, 137, 0.3);*/
 }
 
 #contact-form h2 {
