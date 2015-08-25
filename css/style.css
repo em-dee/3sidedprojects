@@ -82,7 +82,7 @@ nav #menu li a {
 
 #index-main {
     width: 60%;
-    margin: 5em auto;
+    margin: 8em auto;
     padding: 1em;
     -webkit-border-radius: .5em;
     border-radius: .5em; 
@@ -221,9 +221,6 @@ footer p {
 
 /* ---- MEDIA QUERIES ---- */
 
-@media (min-width: 1000px) {
-
-}
 
 @media screen and (max-width:1150px) { 
      .formblock { 
@@ -282,9 +279,13 @@ footer p {
     h1, h2, h3, p {
         font-size: 1.2em;
     }
+    
+    #index-main {
+        margin: 12em auto;
+    }
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:580px) {
     #menu {
 		display: none;
 	}
@@ -378,6 +379,10 @@ footer p {
         width: 80%;
     }
     
+    #index-main {
+        margin: 2em auto;
+    }
+    
 }
 
 @media screen and (max-width:400px) {
@@ -396,7 +401,6 @@ footer p {
     }
     
     #index-main {
-        margin: 2em auto;
         padding: 0.5em;
     }
     
