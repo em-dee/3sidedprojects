@@ -10,9 +10,16 @@ img {
     position: relative;
     width: 100%;
     height: 900px;
+    margin-bottom: -80px;
     background-size: cover;
     overflow-y: auto;
 }
+
+.wrapper:after {
+    content: "";
+    display: block;
+}
+
 
 body {
     font-family: "Source Sans Pro", Arial, sans-serif;
@@ -43,7 +50,7 @@ body {
 
 #logo {
 	float: left;
-    max-width: 9.375em;
+    max-width: 9.35em;
 }
 
 #logo a {
@@ -75,9 +82,21 @@ nav #menu li a {
 #index {
 	margin-top: 3em;
     width: 100%;
-    min-height: 600px;
-    max-height: 800px;
+    min-height: 900px;
+    max-height: 1000px;
     background: url("../images/background.jpg") no-repeat center center fixed;
+}
+
+.flexbox-container {
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
 }
 
 #index-main {
@@ -86,7 +105,8 @@ nav #menu li a {
     padding: 1em;
     -webkit-border-radius: .5em;
     border-radius: .5em; 
-    background-color: rgba(197, 211, 118, 0.2);
+    background-color: rgba(62, 166, 172, 0.2);
+    color: white;
 }
 
 
@@ -128,8 +148,8 @@ nav #menu li a {
 #contact-bkg {
     margin-top: 3em;
     width: 100%;
-    min-height: 600px;
-    max-height: 800px;
+    min-height: 700px;
+    max-height: 900px;
     background: url("../images/3sided_logo2.png") no-repeat center center fixed;
 }
 
@@ -143,10 +163,6 @@ nav #menu li a {
    /* background-color: rgba(97, 135, 137, 0.3);*/
 }
 
-#contact-form h2 {
-    text-align: center;
-}
-
 input, label { 
     display: block; 
 }
@@ -157,7 +173,7 @@ label, legend, fieldset {
 
 .formblock { 
 	margin-top: 1em;
-    margin-left: 35%;
+    margin-left: 5%;
 	clear: both;
 }
 
